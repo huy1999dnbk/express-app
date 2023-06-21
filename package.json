@@ -9,8 +9,10 @@
     "format:write": "prettier --write .",
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix .",
-    "start": "tsc && nodemon dist/server.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "tsc -p .",
+    "dev": "tsc && nodemon dist/server.js",
+    "start": "node dist/server.js"
   },
   "lint-staged":{
     "**/*.{js,jsx,ts,tsx}":[
